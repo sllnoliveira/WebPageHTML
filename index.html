@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page em HTML</title>
+    <style>
+        a {
+            color: rgb(0, 0, 6); /* Cor normal do link */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        a:hover {
+            color: rgb(239, 0, 131); /* Cor quando passar o mouse */
+            text-decoration: underline; /* Sublinha o link quando passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho! -->
+    <header>
+        <h1 style="background-color: #e49ec7; box-shadow: 3px 3px 10px rgba(140, 6, 127, 0.3);">Aprendizados da Aula de HTML</h1>
+        <h2 style="font-family: 'Arial', sans-serif; color: #510230; display: flex; align-items: center;">
+        <img src="logo-dio.png" alt="Logo DIO" style="width: 40px; height: auto; margin-right: 10px;">
+        Bootcamp Dio Santander - Frontend
+        </h2>
+        <hr>
+        <hr>
+        <nav id="menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#fomularios">Formulários</a></li>
+                <li><a href="#estruturaeformatacao">Estrutura e Formatação</a></li>
+                <li><a href="#midias">Mídias</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#htmlsemantico">HTML Semântico</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+<hr>
+    <!-- Conteúdo principal! -->
+    <main>
+        <section id="introducao">
+            <u><h2 style="color: #510230;">Introdução</h2></u>
+            <p>Criei essa <mark>Web Page</mark> para deixar registrado grande parte do que aprendi na aula de <mark>HTML</mark> com o professor <mark>Diogo Mainardes</mark>, da DIO.</p>
+            <p>Tivemos cinco módulos super legais e explicativos. Aprendi muito!</p>
+            <i><blockquote>
+             "HTML é a linguagem de marcação essencial para a construção de websites."
+             <footer>- Autor Desconhecido</footer>
+            </blockquote></i>
+
+           <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+
+
+
+        </section>
+
+        <section id="fomularios">
+            <h2 style="color: #510230;">Formulários</h2>
+             <p>Formulários são usados para coletar dados dos usuários. Eles podem incluir campos de texto, botões, caixas de seleção, etc. Aprendemos sobre Tags Form, Tag Input,Checkbox e Radio, Button, Select e Textarea.</p>
+
+            <!-- Topicos para melhorar a 
+              organização -->
+             <h3>&#8594;Tags Form</h3>
+            <p>A tag <code>&lt;form&gt;</code> é usada para criar formulários. Ela pode conter vários tipos de campos de entrada.</p>
+
+            <h3>&#8594;Tag Input</h3>
+            <p>A tag <code>&lt;input&gt;</code> é usada para criar campos de entrada de dados. Existem vários tipos, como texto, senha, email, etc.</p> 
+
+            <h3>&#8594;Checkbox e Radio</h3>
+            <p>Checkboxes permitem que os usuários selecionem várias opções, enquanto os botões de rádio permitem apenas uma seleção entre várias opções.</p>
+
+            <h3>&#8594;Button</h3>
+            <p>A tag <code>&lt;button&gt;</code> é usada para criar botões que podem ser clicados para enviar formulários ou executar ações.</p>
+
+            <h3>&#8594;Select</h3>
+            <p>A tag <code>&lt;select&gt;</code> cria uma lista suspensa de opções. Os usuários podem escolher uma opção da lista.</p>
+
+            <h3>&#8594;Textarea</h3>
+            <p>A tag <code>&lt;textarea&gt;</code> é usada para criar   áreas de texto onde os usuários podem inserir texto longo.</p>
+        </section>
+
+        <section id="estruturaeformatacao">
+            <h2 style="color: #510230;">Estrutura e Formatação</h2>
+            <p>A estrutura do HTML é composta por elementos como cabeçalhos, parágrafos, listas e links. A formatação pode ser feita com CSS.</p>
+
+            <h3>&#8594;Estrutura Básica do HTML</h3>
+            <p>A estrutura básica de um documento HTML inclui a declaração do tipo de documento, a tag <code>&lt;html&gt;</code>, e as seções <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>.</p>
+
+            <h3>&#8594;Tags Importantes</h3>
+            <p>Algumas tags importantes incluem <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para cabeçalhos, <code>&lt;p&gt;</code> para parágrafos, e <code>&lt;a&gt;</code> para links.</p>
+
+            <h3>&#8594;Formatação de Texto</h3>
+            <p>O texto pode ser formatado usando tags como <code>&lt;strong&gt;</code> para negrito, <code>&lt;em&gt;</code> para itálico, e <code>&lt;u&gt;</code> para sublinhado.</p>
+
+            <h3>&#8594;Listas</h3>
+            <p>Listas podem ser ordenadas (<code>&lt;ol&gt;</code>) ou não ordenadas (<code>&lt;ul&gt;</code>). Itens de lista são definidos com a tag <code>&lt;li&gt;</code>.</p>
+
+            <h3>&#8594;Tabelas</h3>
+            <p>Tabelas são criadas com a tag <code>&lt;table&gt;</code> e podem conter linhas (<code>&lt;tr&gt;</code>), células de cabeçalho (<code>&lt;th&gt;</code>) e células de dados (<code>&lt;td&gt;</code>).</p>
+
+            <h3>&#8594;Links e Imagens</h3>
+            <p>Links são criados com a tag <code>&lt;a&gt;</code> e imagens com a tag <code>&lt;img&gt;</code>. Os links podem ser internos ou externos, e as imagens podem ter atributos como <code>src</code> e <code>alt</code>.</p>
+
+            <h3>&#8594;Comentários</h3>
+            <p>Comentários em HTML são feitos com a sintaxe <code>&lt;!-- comentário --&gt;</code>. Eles não são exibidos no navegador, mas ajudam na organização do código.</p>
+
+            <h3>&#8594;Meta Tags</h3>
+            <p>Meta tags são usadas dentro da seção <code>&lt;head&gt;</code> para fornecer informações sobre o documento, como descrição, palavras-chave e autor.</p>
+
+            <h3>&#8594;Divs e Spans</h3>   
+            <p>A tag <code>&lt;div&gt;</code> é usada para agrupar blocos de conteúdo, enquanto a tag <code>&lt;span&gt;</code> é usada para agrupar texto em linha. Ambas são úteis para aplicar estilos com CSS.</p> 
+
+            <h3>&#8594;Fieldset</h3>
+            <p>A tag <code>&lt;fieldset&gt;</code> é usada para agrupar elementos de formulário relacionados, enquanto a tag <code>&lt;legend&gt;</code> fornece um título para o grupo.</p>
+
+            <h3>&#8594;Iframe</h3>
+            <p>A tag <code>&lt;iframe&gt;</code> é usada para incorporar outro documento HTML dentro do documento atual. É útil para exibir conteúdo externo, como vídeos ou mapas.</p>
+
+            <h3>&#8594;Cores</h3>
+            <p>As cores podem ser definidas em HTML usando nomes de cores, valores hexadecimais ou valores RGB. Elas são aplicadas através de CSS.</p>  
+            <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+
+        </section>
+
+        <section id="midias">
+            <h2 style="color: #510230;">Mídias</h2>
+            <p>HTML permite a incorporação de imagens, vídeos e áudio, enriquecendo a experiência do usuário.</p>
+
+            <h3>&#8594;Tag Img</h3>
+            <p>A tag <code>&lt;img&gt;</code> é usada para inserir imagens em uma página web. Ela requer o atributo <code>src</code> para especificar o caminho da imagem e o atributo <code>alt</code> para fornecer uma descrição alternativa.</p>
+
+            <h3>&#8594;Tag Video</h3>
+            <p>A tag <code>&lt;video&gt;</code> é usada para incorporar vídeos. Ela pode conter atributos como <code>controls</code> para exibir controles de reprodução, <code>autoplay</code> para iniciar automaticamente e <code>loop</code> para reproduzir em loop.</p>
+
+            <h3>&#8594;Tag Audio</h3>
+            <p>A tag <code>&lt;audio&gt;</code> é usada para incorporar áudio. Assim como a tag de vídeo, ela pode ter atributos como <code>controls</code>, <code>autoplay</code> e <code>loop</code>.</p>
+
+            <h3>&#8594;Tag Track</h3>
+            <p>A tag <code>&lt;track&gt;</code> é usada dentro da tag <code>&lt;video&gt;</code> ou <code>&lt;audio&gt;</code> para fornecer legendas ou descrições de áudio. Ela pode ter atributos como <code>kind</code>, <code>src</code> e <code>srclang</code>.</p>
+
+            <h3>&#8594;Tag Source</h3>
+            <p>A tag <code>&lt;source&gt;</code> é usada dentro das tags <code>&lt;video&gt;</code> e <code>&lt;audio&gt;</code> para especificar diferentes formatos de mídia. Isso permite que o navegador escolha o formato mais adequado para reprodução.</p>
+
+            <h3>&#8594;Tag Inframe</h3>
+            <p>A tag <code>&lt;iframe&gt;</code> é usada para incorporar outro documento HTML dentro do documento atual. É útil para exibir conteúdo externo, como vídeos do YouTube ou mapas do Google Maps.</p>
+            <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+
+        </section>
+
+        <section id="tabelas">
+            <h2 style="color: #510230;">Tabelas</h2>
+            <p>Tabelas são usadas para organizar dados em linhas e colunas, facilitando a visualização de informações.</p>
+
+            <h3>&#8594;Tag Table</h3>
+            <p>A tag <code>&lt;table&gt;</code> é usada para criar uma tabela. Ela contém outras tags como <code>&lt;tr&gt;</code> para linhas, <code>&lt;th&gt;</code> para células de cabeçalho e <code>&lt;td&gt;</code> para células de dados.</p>
+
+            <h3>&#8594;Tag tr</h3>
+            <p>A tag <code>&lt;tr&gt;</code> é usada para definir uma linha em uma tabela. Cada linha pode conter várias células de dados ou cabeçalho.</p>
+
+            <h3>&#8594;Tag td e th</h3>
+            <p>A tag <code>&lt;td&gt;</code> é usada para definir uma célula de dados em uma tabela, enquanto a tag <code>&lt;th&gt;</code> é usada para definir uma célula de cabeçalho. As células de cabeçalho geralmente são exibidas em negrito e centralizadas.</p>
+
+            <h3>&#8594;Tag tbody, thead e tfoot</h3>
+            <p>As tags <code>&lt;tbody&gt;</code>, <code>&lt;thead&gt;</code> e <code>&lt;tfoot&gt;</code> são usadas para agrupar o corpo, o cabeçalho e o rodapé de uma tabela, respectivamente. Isso ajuda a organizar melhor os dados e a aplicar estilos específicos.</p>
+
+            <h3>&#8594;Estilização de Tabelas</h3>
+            <p>As tabelas podem ser estilizadas usando CSS para melhorar a aparência. Isso inclui definir bordas, cores de fundo, espaçamento entre células e fontes.</p>
+            <h3>&#8594;Exemplo de Tabela</h3>
+            <p>Abaixo está um exemplo simples de uma tabela em HTML:</p>    
+            <pre>
+&lt;table&gt;           
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nome&lt;/th&gt;
+            &lt;th&gt;Idade&lt;/th&gt;      
+        &lt;th&gt;Cidade&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+                
+        &lt;tr&gt;
+            &lt;td&gt;João&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;São Paulo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Maria&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Rio de Janeiro&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;  
+            &lt;td&gt;Pedro&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+            &lt;td&gt;Belo Horizonte&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+            </pre>
+             <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+        </section>
+
+        <section id="htmlsemantico">
+            <h2 style="color: #510230;">HTML Semântico</h2>
+            <p>HTML semântico usa tags que têm significado claro, melhorando a acessibilidade e SEO das páginas web.</p>
+
+            <h3>&#8594;Importância do HTML Semântico</h3>
+            <p>O HTML semântico ajuda os navegadores e mecanismos de busca a entenderem melhor o conteúdo da página. Isso melhora a acessibilidade para pessoas com deficiência e otimiza o SEO.</p>
+
+            <h3>&#8594;Tags Semânticas</h3>
+            <p>Algumas tags semânticas importantes incluem:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code> - Define o cabeçalho da página ou seção.</li>
+                <li><code>&lt;nav&gt;</code> - Define uma seção de navegação.</li>
+                <li><code>&lt;main&gt;</code> - Define o conteúdo principal da página.</li>
+                <li><code>&lt;article&gt;</code> - Define um conteúdo independente, como um post de blog.</li>
+                <li><code>&lt;section&gt;</code> - Define uma seção genérica de conteúdo.</li>
+                <li><code>&lt;aside&gt;</code> - Define conteúdo relacionado, como barras laterais.</li>
+                <li><code>&lt;footer&gt;</code> - Define o rodapé da página ou seção.</li>
+                <li><code>&lt;figure&gt;</code> - Define conteúdo ilustrativo, como imagens com legendas.</li>
+                <li><code>&lt;figcaption&gt;</code> - Define a legenda de uma figura.</li>
+                <li><code>&lt;time&gt;</code> - Define uma data ou hora.</li>
+                <li><code>&lt;mark&gt;</code> - Define texto destacado.</li>
+                <li><code>&lt;address&gt;</code> - Define informações de contato do autor ou proprietário do documento.</li>
+            </ul>
+
+            <h3>&#8594;Acessibilidade</h3>
+            <p>O uso de tags semânticas melhora a acessibilidade, pois leitores de tela e outros dispositivos assistivos podem interpretar melhor o conteúdo. Isso é especialmente importante para pessoas com deficiência visual ou cognitiva.</p>
+
+            <h3>&#8594;SEO</h3>
+            <p>O HTML semântico também melhora o SEO, pois os mecanismos de busca podem entender melhor a estrutura e o conteúdo da página. Isso pode resultar em melhores classificações nos resultados de pesquisa.</p>
+
+            <h3>&#8594;Web Scraping</h3>   
+            <p>O HTML semântico facilita o web scraping, pois as tags bem definidas permitem que os scripts identifiquem e extraiam informações de maneira mais eficiente.</p>
+
+            <h3>&#8594;Article, Blockquote e Q</h3>
+            <p>A tag <code>&lt;article&gt;</code> é usada para definir um conteúdo independente, como um post de blog. A tag <code>&lt;blockquote&gt;</code> é usada para citações longas, enquanto a tag <code>&lt;q&gt;</code> é usada para citações curtas em linha.</p>
+        <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+        </section>
+                
+        <section id="conclusao">
+    <h2 style="color: #510230;">Conclusão</h2>
+    <p>Este projeto foi uma ótima oportunidade para aplicar e consolidar o aprendizado sobre <strong>HTML</strong>. Através das diferentes seções, pude explorar uma variedade de tags e técnicas fundamentais para a criação de páginas web bem estruturadas e funcionais. Entre os tópicos abordados, destaco:</p>
+    <ul>
+        <li><strong>Estrutura de Documentos HTML</strong>: Aprendi como criar a estrutura básica de uma página web com as tags principais como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, e <code>&lt;body&gt;</code>.</li>
+        <li><strong>Formulários</strong>: Explorei o uso de diferentes tipos de entradas e como interagir com os usuários através de campos como <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code> e <code>&lt;select&gt;</code>.</li>
+        <li><strong>Semântica</strong>: Estudei como melhorar a acessibilidade e otimizar a indexação do conteúdo nos motores de busca com o uso de tags semânticas como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, e <code>&lt;main&gt;</code>.</li>
+        <li><strong>Trabalhando com Mídias</strong>: Vi como incorporar imagens, vídeos e áudios usando as tags apropriadas, enriquecendo a experiência do usuário.</li>
+    </ul>
+    <p>Usei um pouquinho de <u>CSS diretamente no HTML</u> para deixar mais bonitinho. Com todas essas aprendizagens, me mais preparado para criar páginas web completas e funcionais. A experiência foi extremamente valiosa, e continuarei explorando o mundo do <i>desenvolvimento web</i> para aprofundar meus conhecimentos e habilidades.</p>
+   
+    <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+        </section>
+
+        <section id="referencias">
+            <h2 style="color: #510230;">Referências</h2>
+             <p>Aqui estão algumas referências úteis para aprender mais sobre HTML:</p>
+            <ul>
+                <li><a href="https://www.dio.me/" target="_blank">Aula de HTML da DIO</a></li>
+        <button class="btn-voltar" onclick="window.location.href='#menu';">Voltar</button>
+        </section>
+</main>
+    <hr>
+
+    <!-- Rodapé! -->
+    <footer>
+        <p style="color: rgb(210, 1, 116);">Desenvolvido por Suellen Oliveira - Bootcamp Dio Santander - Frontend</p>
+        <p>&copy; 2025</p>
+
+        <p>Para mais informações, visite o site da <a href="https://www.dio.me" target="_blank">DIO</a>.</p>
+
+         <audio controls autoplay loop style="width: 150px;">
+    <source src="musica.mp3" type="audio/mp3">
+</audio>
+<p><small>Seu navegador não suporta a tag de áudio.</small></p>
+
+    </footer>
+
+</body>
+</html>
