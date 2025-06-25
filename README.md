@@ -1,2 +1,25 @@
-# WebPageHTML
-Projeto de Web Page em HTML para o Bootcamp da Dio Santader - Frontend. Aula de HTML.
+#Web Page em HTML
+Este projeto é uma página web simples criada como parte do Bootcamp Dio Santander - Frontend. O objetivo é aplicar o que aprendi sobre HTML.
+
+🚀 Tecnologias Utilizadas
+
+HTML5 e CSS
+
+🧩 Funcionalidades
+
+
+A página possui:
+
+Títulos e textos explicativos.
+
+Listas ordenadas e não ordenadas.
+
+Formulários.
+
+Links para navegar pelas seções.
+
+Exemplo de áudio tocando automaticamente.
+
+📜 Licença
+Este projeto não possui uma licença específica. Você pode usá-lo à vontade.
+
